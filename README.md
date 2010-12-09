@@ -88,4 +88,4 @@ Host implementations should strive to write response data to the network as “l
 
 ### Host Errors ###
 
-Hosts may throw exceptions during the transmission of the response, such as if the recipient disconnected. Such failures should be propogated back to the application so they are aware of the failure.
+Hosts may encounter exceptions when sending and receiving data. Such failures should be forwarded to the OWIN logger so that they may be recorded.
